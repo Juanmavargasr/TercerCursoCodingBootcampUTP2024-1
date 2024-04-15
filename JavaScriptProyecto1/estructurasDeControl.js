@@ -1,3 +1,13 @@
+//15/04/2024 1:00 pm
+//v 1.0
+//Ing(c) Juan Manuel Vargas R.
+//Javascript
+//ECMAScript 6.0
+//Universidad Tecnológica de Pereira
+//Programa de Ingeniería de Sistemas y Computación
+//About the program: the current program, let to the user choose the action that want to do. The options are:
+//Try to guess a number vs the machine, calculate a factorial number, count a Vocals in an string.
+
 const readlineSync = require("readline-sync");
 
 const guessTheNumber = () => {
