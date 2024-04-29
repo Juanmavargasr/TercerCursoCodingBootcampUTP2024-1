@@ -10,7 +10,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
   background-color: rgb(159, 159, 159);
   flex-direction: column;
 }
@@ -127,8 +126,8 @@ body {
 }
 
 nav {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   width: 100%;
 }
 
@@ -140,15 +139,18 @@ nav .logo {
   min-width: 250px;
 }
 nav a {
-  color: white;
+  color: black;
   text-decoration: none;
   display: block;
   padding: 20px 25px;
+  font-weight: lighter;
 }
 
 nav a:hover {
-  color: white;
-  background-color: #af650c;
+  color: black;
+  text-decoration: underline;
+  scale: 1.05;
+  font-weight: bold;
 }
 
 nav .desktop {
@@ -183,51 +185,68 @@ nav .desktop .secondary-mini {
 
 .store {
   background-color: white;
-  width: 98%;
   border-radius: 10px;
-  overflow: hidden;
-  height: 90%;
-  /* display: flex; */
-  align-items: center;
-  margin: 5px;
-  /* padding-top: 15%; */
-  overflow: auto;
-  margin-top: 20px;
-  padding-top: 15%;
-}
-
-.products-containter {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 5px;
+  width: 100%;
+  gap: 4px;
 }
 
 .product {
-  width: 14%;
-  margin: 80px;
-  float: left; /* Para alinear los productos en una rejilla */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 30px;
+  /* float: left; Para alinear los productos en una rejilla */
   background-color: white;
   /* border-radius: 5px; */
-  border: 1.5px solid #000;
+  /* border: 1.5px solid #000; */
+  width: 23%;
+}
+
+.product img {
+  width: 100%;
+}
+
+.product img:hover {
+  scale: 1.1;
+  transition: transform 0.3s ease;
 }
 
 .btn2 {
+  font-weight: bold;
+  text-transform: capitalize;
   padding: 15px;
   width: 100%;
-
+  height: 50px;
   font-weight: bolder;
   display: block;
-  text-transform: uppercase;
-  border: 1.5px solid #000;
+  border: 1.6px solid #000;
   cursor: pointer;
   background-color: white;
+  align-content: center;
+  align-items: center;
 }
 
 .btn2:hover {
-  background-color: #af650c;
+  border: 2.6px solid #000;
+  color: black;
 }
 
 .prices p {
   display: inline;
 }
+
+/* .prices {
+  display: flex;
+  justify-content: flex-start;
+} */
 
 .last-price {
   text-decoration: line-through;
@@ -243,14 +262,11 @@ nav .desktop .secondary-mini {
   text-decoration: underline;
 }
 
-.product-image {
-  background-color: transparent;
-}
-
-.product-image img {
+.product a img {
   display: block;
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 400px;
+  /* height: auto; */
   transition: transform 0.3s ease;
   background-color: transparent;
 }
