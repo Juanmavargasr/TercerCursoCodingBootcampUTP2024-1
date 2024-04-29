@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  </head>
+  <body>
+    <nav>
+      <div class="mobile">
+        <div class="header">
+          <div class="logo">logo</div>
+          <div class="more"><button>more</button></div>
+        </div>
+        <div class="links">
+          <a href="#">Products</a>
+          <a href="#">register</a>
+          <a href="#">Login</a>
+        </div>
+      </div>
+      <div class="desktop">
+        <div class="index">Logo</div>
+        <div class="primary">
+          <a href="../index.html">Store</a>
+          <a href="#">Contact us</a>
+        </div>
+        <div class="secondary-full">
+          <a href="./signUp.html">Sign up</a>
+          <a href="#">Login</a>
+        </div>
+        <div class="secondary-mini">
+          <a href="#">More</a>
+          <div class="submenu">
+            <a href="./signUp.html">Sign up</a>
+            <a href="#">Login</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="form-container">
+      <div class="login-container">
+        <h2>Welcome to Mentor's Store</h2>
+        <p>Log In</p>
+        <form action="">
+          <p>
+            <label for="username">username</label>
+            <input
+              class="text"
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Username here"
+              autofocus
+            />
+          </p>
+          <p>
+            <label for="password">password</label>
+            <input
+              class="text"
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password here"
+            />
+          </p>
+          <div class="options">
+            <div>
+              Remember me
+              <input type="checkbox" name="Rememberme" id="Rememberme" />
+            </div>
+            <div>
+              <a href="">Forgot my password</a>
+            </div>
+          </div>
+          <p>
+            <input type="submit" class="btn btn-login" value="Login" />
+          </p>
+          <div class="providers">
+            <span>Choose another way</span>
+            <button class="btn btn-utp">UTP</button>
+            <button class="btn btn-google">GOOGLE</button>
+          </div>
+        </form>
+      </div>
+      <div class="welcome-screen-container"></div>
+    </div>
+  </body>
+</html>
