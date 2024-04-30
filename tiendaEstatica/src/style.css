@@ -208,6 +208,7 @@ nav .desktop .secondary-mini {
   /* border-radius: 5px; */
   /* border: 1.5px solid #000; */
   width: 23%;
+  padding-top: 17px;
 }
 
 .product img {
@@ -237,6 +238,8 @@ nav .desktop .secondary-mini {
 .btn2:hover {
   border: 2.6px solid #000;
   color: black;
+  scale: 1.1;
+  transition: transform 0.3s ease;
 }
 
 .prices p {
