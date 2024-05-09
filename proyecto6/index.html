@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <audio id="audioIntro" controls class="audio">
+      <source src="./public/Audio/intro.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="audioCorrecta" class="audio">
+      <source src="./public/Audio/correcta.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="audioIncorrecta" class="audio">
+      <source src="./public/Audio/incorrecta.mp3" type="audio/mpeg" />
+    </audio>
+    <div class="modal" id="modal">
+      <img src="./public/Imagenes/modal-introNew.png" alt="" />
+      <button class="btn" onclick="cerrarModal()">comenzar</button>
+    </div>
+    <header>
+      <div class="header1">
+        <img src="./public/Imagenes/BootCamp.png" alt="" id="logo" />
+        <div id="text-header">
+          <h2>Armemos el pesebre de navidad</h2>
+          <p>
+            Como es tradición cada diciembre armamos el pesebre cada diciembre
+            para esperar la llegada del niño Dios. Presiona cada tarjeta para
+            descubrir un personaje, concéntrate y enc uentra su pareja, así
+            revelarás un personaje en el pesebre y descubrirás un dato curioso
+            sobre esta tradición de navidad
+          </p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="contenedor-principal">
+        <div class="memorama" id="memorama"></div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="texto">
+        <p>somos</p>
+        <img src="./public/Imagenes/BootCamp.png" alt="" />
+        <p>
+          y te ayudamos a transformar el aprendizaje en experiencias memorables.
+        </p>
+      </div>
+      <div class="redes">
+        <p>Síguenos:</p>
+        <img src="./public/Imagenes/facebookED.png" alt="" />
+        <img src="./public/Imagenes/instagramED.png" alt="" />
+        <img src="./public//Imagenes/linkedinED.png" alt="" />
+        <img src="./public/Imagenes/modal/" alt="" />
+      </div>
+    </footer>
+    <script src="app1.js"></script>
+  </body>
+</html>
